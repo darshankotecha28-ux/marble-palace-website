@@ -1,13 +1,14 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Marble Palace | Indian Marble, Granite & Quartz Slabs</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
+
   <style>
+
     *{
       margin:0;
       padding:0;
@@ -17,15 +18,16 @@
 
     body{
       font-family:'Poppins',sans-serif;
+      background:#f7f7f7;
       color:#222;
-      background:#f8f8f8;
       line-height:1.7;
     }
 
     header{
       background:
-      linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-      url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1600&auto=format&fit=crop');
+      linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+      url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop');
+
       background-size:cover;
       background-position:center;
       height:100vh;
@@ -39,22 +41,23 @@
       justify-content:space-between;
       align-items:center;
       padding:20px 8%;
-      background:rgba(0,0,0,0.4);
+      background:rgba(0,0,0,0.35);
       position:sticky;
       top:0;
+      z-index:1000;
     }
 
     .logo{
-      font-size:32px;
+      font-size:34px;
       font-weight:700;
-      color:#fff;
       letter-spacing:2px;
+      color:#fff;
     }
 
     nav ul{
       display:flex;
-      list-style:none;
       gap:30px;
+      list-style:none;
     }
 
     nav ul li a{
@@ -83,9 +86,10 @@
     }
 
     .hero-content p{
-      max-width:750px;
+      max-width:760px;
       margin:auto;
       font-size:20px;
+      color:#f3f3f3;
     }
 
     .btn{
@@ -94,19 +98,19 @@
       padding:14px 35px;
       background:#d4af37;
       color:white;
-      border-radius:30px;
       text-decoration:none;
+      border-radius:40px;
       font-weight:600;
       transition:0.3s;
     }
 
     .btn:hover{
-      background:#b8931f;
+      background:#b8911d;
       transform:translateY(-3px);
     }
 
     section{
-      padding:80px 8%;
+      padding:90px 8%;
     }
 
     .section-title{
@@ -116,14 +120,13 @@
 
     .section-title h2{
       font-size:42px;
-      color:#222;
       margin-bottom:10px;
     }
 
     .section-title p{
-      color:#666;
       max-width:700px;
       margin:auto;
+      color:#666;
     }
 
     .cards{
@@ -134,9 +137,9 @@
 
     .card{
       background:white;
-      border-radius:15px;
+      border-radius:18px;
       overflow:hidden;
-      box-shadow:0 8px 25px rgba(0,0,0,0.08);
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
       transition:0.4s;
     }
 
@@ -146,7 +149,7 @@
 
     .card img{
       width:100%;
-      height:250px;
+      height:260px;
       object-fit:cover;
     }
 
@@ -156,15 +159,16 @@
 
     .card-content h3{
       margin-bottom:15px;
-      color:#111;
+      font-size:24px;
     }
 
     .features{
-      margin-top:15px;
+      margin-top:10px;
+      padding-left:18px;
     }
 
     .features li{
-      margin-bottom:8px;
+      margin-bottom:10px;
       color:#555;
     }
 
@@ -176,9 +180,9 @@
 
     .design-gallery img{
       width:100%;
-      height:250px;
+      height:260px;
       object-fit:cover;
-      border-radius:12px;
+      border-radius:14px;
       transition:0.4s;
     }
 
@@ -190,37 +194,43 @@
       background:#111;
       color:white;
       border-radius:20px;
+      padding:60px;
       text-align:center;
     }
 
     .about h2{
+      font-size:42px;
       margin-bottom:20px;
-      font-size:40px;
     }
 
     .about p{
+      color:#ddd;
       max-width:900px;
       margin:auto;
-      color:#ddd;
     }
 
     .contact{
       background:white;
       border-radius:20px;
       box-shadow:0 5px 20px rgba(0,0,0,0.08);
+      padding:50px;
     }
 
     .contact-grid{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-      gap:40px;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
       margin-top:40px;
     }
 
     .contact-box{
-      padding:25px;
       background:#f5f5f5;
       border-radius:15px;
+      padding:30px;
+    }
+
+    .contact-box h3{
+      margin-bottom:15px;
     }
 
     footer{
@@ -233,10 +243,6 @@
 
     @media(max-width:768px){
 
-      .hero-content h1{
-        font-size:42px;
-      }
-
       nav{
         flex-direction:column;
         gap:15px;
@@ -246,215 +252,279 @@
         flex-wrap:wrap;
         justify-content:center;
       }
+
+      .hero-content h1{
+        font-size:42px;
+      }
+
+      .hero-content p{
+        font-size:17px;
+      }
+
     }
+
   </style>
+
 </head>
 
 <body>
 
+  <!-- HEADER -->
+
   <header>
+
     <nav>
+
       <div class="logo">Marble Palace</div>
 
       <ul>
-        <li><a href="#marble">Marble</a></li>
-        <li><a href="#granite">Granite</a></li>
+        <li><a href="#marble">Marbles</a></li>
+        <li><a href="#granite">Granites</a></li>
         <li><a href="#quartz">Quartz</a></li>
         <li><a href="#designs">Designs</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
     </nav>
 
     <div class="hero">
+
       <div class="hero-content">
-        <h1>Luxury Stone Slabs For Elegant Spaces</h1>
+
+        <h1>Natural Stone Slabs for Elegant Spaces</h1>
 
         <p>
-          Marble Palace delivers premium Indian Marble, Indian Granite, and Quartz Slabs 
-          for homes, villas, hotels, offices, kitchens, flooring, and modern interiors.
+          Premium Indian Marble, Granite and Quartz slabs crafted for luxury homes,
+          temples, kitchens, hotels and modern architectural interiors.
         </p>
 
         <a href="#marble" class="btn">Explore Collection</a>
+
       </div>
+
     </div>
+
   </header>
 
-  <!-- MARBLE -->
+  <!-- MARBLE SECTION -->
+
   <section id="marble">
 
     <div class="section-title">
+
       <h2>Indian Marble Slabs</h2>
+
       <p>
-        Timeless beauty with luxurious natural textures and elegant finishes.
+        Timeless elegance crafted from premium Indian marble collections.
       </p>
+
     </div>
 
     <div class="cards">
 
       <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+
+          <h3>Makrana Marble Flooring</h3>
+
+          <ul class="features">
+            <li>Luxury Indian house flooring</li>
+            <li>Temple interiors</li>
+            <li>Elegant staircase applications</li>
+            <li>Villa interior designs</li>
+            <li>Natural glossy appearance</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+
+          <h3>Morward Marble Interiors</h3>
+
+          <ul class="features">
+            <li>Used in premium Indian homes</li>
+            <li>Temple architecture</li>
+            <li>Wall cladding applications</li>
+            <li>Elegant staircase designs</li>
+            <li>Long-lasting durability</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
         <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop">
 
         <div class="card-content">
-          <h3>Usage</h3>
 
-          <ul class="features">
-            <li>Luxury flooring</li>
-            <li>Hotel lobbies</li>
-            <li>Temple interiors</li>
-            <li>Wall cladding</li>
-            <li>Bathroom vanity tops</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop">
-
-        <div class="card-content">
-          <h3>Qualities</h3>
-
-          <ul class="features">
-            <li>Natural glossy appearance</li>
-            <li>Elegant veins & textures</li>
-            <li>Cool surface temperature</li>
-            <li>Premium luxury appeal</li>
-            <li>Long-lasting durability</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
-
-        <div class="card-content">
           <h3>Popular Marble Types</h3>
 
           <ul class="features">
             <li>Makrana Marble</li>
-            <li>Ambaji Marble</li>
-            <li>Katni Marble</li>
-            <li>Rainforest Marble</li>
-            <li>Onyx Marble</li>
+            <li>Morward Marble</li>
           </ul>
+
         </div>
+
       </div>
 
     </div>
+
   </section>
 
-  <!-- GRANITE -->
+  <!-- GRANITE SECTION -->
+
   <section id="granite" style="background:#efefef;">
 
     <div class="section-title">
+
       <h2>Indian Granite Slabs</h2>
 
       <p>
-        Strong, durable and perfect for modern residential and commercial spaces.
+        Durable granite surfaces designed for kitchens and commercial spaces.
       </p>
+
     </div>
 
     <div class="cards">
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop">
 
-        <div class="card-content">
-          <h3>Usage</h3>
-
-          <ul class="features">
-            <li>Kitchen countertops</li>
-            <li>Staircases</li>
-            <li>Exterior cladding</li>
-            <li>Commercial flooring</li>
-            <li>Restaurant tables</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=1200&auto=format&fit=crop">
-
-        <div class="card-content">
-          <h3>Qualities</h3>
-
-          <ul class="features">
-            <li>Scratch resistant</li>
-            <li>Heat resistant</li>
-            <li>Heavy-duty strength</li>
-            <li>Weather resistant</li>
-            <li>Easy maintenance</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
-
-        <div class="card-content">
-          <h3>Popular Granite Types</h3>
-
-          <ul class="features">
-            <li>Black Galaxy Granite</li>
-            <li>Absolute Black Granite</li>
-            <li>Tan Brown Granite</li>
-            <li>Kashmir White Granite</li>
-            <li>Steel Grey Granite</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- QUARTZ -->
-  <section id="quartz">
-
-    <div class="section-title">
-      <h2>Quartz Slabs</h2>
-
-      <p>
-        Stylish engineered stone surfaces designed for modern luxury interiors.
-      </p>
-    </div>
-
-    <div class="cards">
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
-
-        <div class="card-content">
-          <h3>Usage</h3>
-
-          <ul class="features">
-            <li>Modern kitchens</li>
-            <li>Office reception counters</li>
-            <li>Luxury bathrooms</li>
-            <li>Dining tabletops</li>
-            <li>Interior wall panels</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop">
-
-        <div class="card-content">
-          <h3>Qualities</h3>
-
-          <ul class="features">
-            <li>Non-porous surface</li>
-            <li>Stain resistant</li>
-            <li>Uniform modern patterns</li>
-            <li>Low maintenance</li>
-            <li>High durability</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
         <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop">
 
         <div class="card-content">
+
+          <h3>Jet Black Kitchen Countertops</h3>
+
+          <ul class="features">
+            <li>Modern Indian modular kitchens</li>
+            <li>Heat resistant surface</li>
+            <li>Scratch resistant quality</li>
+            <li>Elegant glossy finish</li>
+            <li>Luxury countertop applications</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+
+          <h3>Steel Grey Commercial Spaces</h3>
+
+          <ul class="features">
+            <li>Commercial flooring applications</li>
+            <li>Office countertop designs</li>
+            <li>Heavy-duty strength</li>
+            <li>Easy maintenance</li>
+            <li>Modern commercial appearance</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+
+          <h3>Popular Granite Types</h3>
+
+          <ul class="features">
+            <li>Telephone Black Granite</li>
+            <li>Tan Brown Granite</li>
+            <li>Pearl White Granite</li>
+            <li>Coffee Brown Granite</li>
+            <li>Alaska White Granite</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- QUARTZ SECTION -->
+
+  <section id="quartz">
+
+    <div class="section-title">
+
+      <h2>Quartz Slabs</h2>
+
+      <p>
+        Stylish engineered quartz surfaces for luxury Indian interiors.
+      </p>
+
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+
+          <h3>Quartz Dining Tabletops</h3>
+
+          <ul class="features">
+            <li>Luxury dining tables</li>
+            <li>Restaurant table applications</li>
+            <li>Modern café interiors</li>
+            <li>Elegant polished finish</li>
+            <li>Easy to clean surface</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+
+          <h3>Premium Quartz Interiors</h3>
+
+          <ul class="features">
+            <li>Contemporary interiors</li>
+            <li>Stylish kitchen counters</li>
+            <li>Luxury wall designs</li>
+            <li>Modern office spaces</li>
+            <li>Low maintenance material</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+
           <h3>Popular Quartz Designs</h3>
 
           <ul class="features">
@@ -462,98 +532,126 @@
             <li>Pure White Quartz</li>
             <li>Concrete Grey Quartz</li>
             <li>Black Mirror Quartz</li>
-            <li>Gold Vein Quartz</li>
           </ul>
+
         </div>
+
       </div>
 
     </div>
+
   </section>
 
-  <!-- DESIGNS -->
+  <!-- DESIGN INSPIRATIONS -->
+
   <section id="designs" style="background:#efefef;">
 
     <div class="section-title">
+
       <h2>Real-Life Design Inspirations</h2>
 
       <p>
-        Elegant applications of marble, granite and quartz in modern architecture.
+        Elegant Indian homes, temple interiors and luxury kitchen inspirations.
       </p>
+
     </div>
 
     <div class="design-gallery">
 
-      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
+      <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop">
 
-      <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop">
+      <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1200&auto=format&fit=crop">
 
-      <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop">
+      <img src="https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?q=80&w=1200&auto=format&fit=crop">
 
-      <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=1200&auto=format&fit=crop">
+      <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1200&auto=format&fit=crop">
 
-      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
+      <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1200&auto=format&fit=crop">
 
-      <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop">
+      <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=1200&auto=format&fit=crop">
 
     </div>
+
   </section>
 
   <!-- ABOUT -->
+
   <section>
 
     <div class="about">
+
       <h2>Why Choose Marble Palace?</h2>
 
       <p>
-        Marble Palace is committed to delivering premium-quality Indian Marble, Granite, 
-        and Quartz slabs with elegant finishes and competitive pricing. 
-        We serve homeowners, builders, architects, hotels, and commercial projects 
-        with durable and luxurious stone solutions tailored to modern design trends.
+        Marble Palace delivers premium-quality Indian Marble, Granite and Quartz slabs
+        with elegant finishes and modern craftsmanship. We serve homeowners, architects,
+        builders, temples, hotels and commercial spaces with luxurious natural stone
+        solutions tailored for timeless beauty and durability.
       </p>
+
     </div>
 
   </section>
 
   <!-- CONTACT -->
+
   <section id="contact">
 
     <div class="section-title">
+
       <h2>Contact Marble Palace</h2>
 
       <p>
-        Get in touch for pricing, bulk orders, showroom visits, and custom slab requirements.
+        Get in touch for pricing, bulk orders and showroom visits.
       </p>
+
     </div>
 
-    <div class="contact contact-grid">
+    <div class="contact">
 
-      <div class="contact-box">
-        <h3>📍 Address</h3>
-        <p>
-          Marble Palace<br>
-          Premium Stone & Slab Showroom<br>
-          Andhra Pradesh, India
-        </p>
-      </div>
+      <div class="contact-grid">
 
-      <div class="contact-box">
-        <h3>📞 Phone</h3>
-        <p>+91 98765 43210</p>
-      </div>
+        <div class="contact-box">
 
-      <div class="contact-box">
-        <h3>📧 Email</h3>
-        <p>info@marblepalace.com</p>
+          <h3>📍 Address</h3>
+
+          <p>
+            Marble Palace<br>
+            Premium Marble & Granite Showroom<br>
+            Andhra Pradesh, India
+          </p>
+
+        </div>
+
+        <div class="contact-box">
+
+          <h3>📞 Phone</h3>
+
+          <p>+91 98765 43210</p>
+
+        </div>
+
+        <div class="contact-box">
+
+          <h3>📧 Email</h3>
+
+          <p>info@marblepalace.com</p>
+
+        </div>
+
       </div>
 
     </div>
 
   </section>
 
+  <!-- FOOTER -->
+
   <footer>
+
     <p>© 2026 Marble Palace. All Rights Reserved.</p>
+
   </footer>
 
 </body>
 </html>
-```
